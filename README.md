@@ -136,11 +136,12 @@ AppRegistry.registerComponent('SampleApp', () => SampleApp);
 
 ### Props
 
-| Prop             | Type        | Description                    |
-|------------------|-------------|--------------------------------|
-|`message`         |`HTML`       |Dialog box content text         |
-|`ok`              |`String`     |Dialog box ok button text       |
-|`cancel`          |`String`     |Dialog box cancel button text   |
+| Prop             | Type        | Description                                     |
+|------------------|-------------|-------------------------------------------------|
+|`message`         |`HTML`       |Dialog box content text                          |
+|`ok`              |`String`     |Dialog box ok button text                        |
+|`cancel`          |`String`     |Dialog box cancel button text                    |
+|`cancelable`      |`Boolean`    |Whether the dialog is cancelable (default: true) |
 
 ### Methods
 

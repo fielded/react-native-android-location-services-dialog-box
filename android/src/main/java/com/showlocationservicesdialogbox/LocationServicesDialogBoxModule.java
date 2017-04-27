@@ -57,6 +57,11 @@ class LocationServicesDialogBoxModule extends ReactContextBaseJavaModule impleme
         final AlertDialog.Builder builder = new AlertDialog.Builder(activity);
         final String action = android.provider.Settings.ACTION_LOCATION_SOURCE_SETTINGS;
 
+
+        if (configMap.hasKey("cancelable")) {
+          builder.setCancelable(configMap.getBoolean("cancelable"));
+        }
+
         builder.setMessage(Html.fromHtml(configMap.getString("message")))
                 .setPositiveButton(configMap.getString("ok"),
                         new DialogInterface.OnClickListener() {
